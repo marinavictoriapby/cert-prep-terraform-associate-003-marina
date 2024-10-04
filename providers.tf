@@ -8,13 +8,7 @@ terraform {
 }
 
 provider "aws" {
-  region  = "us-east-1"
-  profile = "Helen"
-  # Configuration options
-}
-
-provider "aws" {
   alias   = "ireland"
   region  = "eu-west-1"
-  profile = "marinav"
+  profile = "default"
 }
