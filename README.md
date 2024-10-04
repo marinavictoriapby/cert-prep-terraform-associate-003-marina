@@ -79,3 +79,17 @@ Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learn
 [lil-course-url]: https://www.linkedin.com/learning/cert-prep-terraform-associate-003
 [lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQGzQlaNvLC7Ug/learning-public-crop_675_1200/0/1712011598867?e=2147483647&v=beta&t=Lzi02WmDdibQUHKEpderFPtKczGYwQH4tTTCE4K66hw
 
+## AWS Configuration
+Type in the directory "aws configure"
+Set access key id and secret access key that you generated in AWS IAM
+Show the keys with aws configure list
+
+## Start directory for Terraform (initialize)
+terraform init to download providers (initialize => installed and available) and modules
+There is an environment validation also while doing the init command
+It initialized the backend and the provider plugins
+if the plugin is downloaded, it won't be updated
+Also note the .terraform.lock.hcl is generated
+This will generate a .terraform directory that contains /providers/registry/whatever_provider
+Note that this is listed in the .gitignore, so as tfstate, tfstate backup and tfplan
+Also the tfvars files will be ignored in this case
